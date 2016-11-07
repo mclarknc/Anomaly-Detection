@@ -61,3 +61,19 @@ def reconstruct(data, segment_len, clusterer):
 
     return reconstructed
 
+def init_pyplot():
+    from IPython.display import set_matplotlib_formats
+    set_matplotlib_formats('pdf', 'png')
+    plt.rcParams['savefig.dpi'] = 75
+    plt.rcParams['figure.autolayout'] = False
+    plt.rcParams['figure.figsize'] = 10, 6
+    plt.rcParams['axes.labelsize'] = 18
+    plt.rcParams['axes.titlesize'] = 20
+    plt.rcParams['font.size'] = 12
+    plt.rcParams['lines.linewidth'] = 2.0
+    plt.rcParams['lines.markersize'] = 8
+    plt.rcParams['legend.fontsize'] = 10
+    plt.rcParams['text.usetex'] = False
+    plt.rcParams['font.family'] = "sans serif"
+    plt.rcParams['font.serif'] = "cm"
+    plt.rcParams['text.latex.preamble'] = r"\usepackage{subdepth}, \usepackage{type1cm}"
